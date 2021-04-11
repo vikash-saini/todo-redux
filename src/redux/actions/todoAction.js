@@ -1,4 +1,3 @@
-import { uuid } from "uuidv4";
 
 // add task
 export const addTask = (task) => {

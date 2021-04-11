@@ -1,10 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
 // components
 import TODO from "./components/todo";
 import List from "./components/list";
 import { Container, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import "./App.css";
 
 function App() {
   const { list } = useSelector((state) => state.lists);
@@ -18,7 +17,7 @@ function App() {
         <Container className="mt-3">
           {/* {lists} */}
           <TODO />
-          <List todolist={list}/>
+          <List todolist={list} />
         </Container>
       </Row>
     </div>
